@@ -1,6 +1,6 @@
-import { TestBed, inject } from '@angular/core/testing';
+import {TestBed, inject} from '@angular/core/testing';
 
-import { TodoDataService } from './todo-data.service';
+import {TodoDataService} from './todo-data.service';
 import {Todo} from './todo';
 
 describe('TodoDataService', () => {
