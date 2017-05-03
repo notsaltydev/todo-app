@@ -1,8 +1,8 @@
-#Live version
+# TodoApp
+
+## Live version
 
 [todo-app](https://notsaltydev.github.io/todo-app/)
-
-# TodoApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
