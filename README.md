@@ -1,6 +1,6 @@
 # TodoApp
 
-Status:   [![Build Status](https://travis-ci.org/notsaltydev/todo-app.svg?branch=master)](https://travis-ci.org/notsaltydev/todo-app)
+[![Build Status](https://travis-ci.org/notsaltydev/todo-app.svg?branch=master)](https://travis-ci.org/notsaltydev/todo-app)
 
 ## Live version
 
