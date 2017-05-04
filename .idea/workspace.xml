@@ -30,21 +30,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis-deploy.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".travis-deploy.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis-deploy.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -106,8 +106,8 @@
         <option value="$PROJECT_DIR$/src/styles.css" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/.travis-deploy.sh" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/.travis-deploy.sh" />
       </list>
     </option>
   </component>
@@ -337,7 +337,7 @@
       <workItem from="1493814313476" duration="98000" />
       <workItem from="1493814557581" duration="8907000" />
       <workItem from="1493900856717" duration="2217000" />
-      <workItem from="1493903295904" duration="4222000" />
+      <workItem from="1493903295904" duration="4567000" />
     </task>
     <task id="LOCAL-00001" summary="create todo class and add the logic">
       <created>1493815323834</created>
@@ -563,11 +563,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493907044673</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="improvment travis config #9">
+      <created>1493907709072</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1493907709072</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15454000" />
+    <option name="totallyTimeSpent" value="15799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="6" />
@@ -625,7 +632,8 @@
     <MESSAGE value="improvment travis config #6" />
     <MESSAGE value="improvment travis config #7" />
     <MESSAGE value="improvment travis config #8" />
-    <option name="LAST_COMMIT_MESSAGE" value="improvment travis config #8" />
+    <MESSAGE value="improvment travis config #9" />
+    <option name="LAST_COMMIT_MESSAGE" value="improvment travis config #9" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -798,15 +806,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis-deploy.sh">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/.travis-deploy.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />

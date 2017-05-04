@@ -12,4 +12,12 @@ before_script:
   - npm install -g @angular/cli
 
 script:
+  - ng build --prod
   - bash ./.travis-deploy.sh
+
+notifications:
+  email:
+    on_failure: change
+    on_success: change
+
+
