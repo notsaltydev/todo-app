@@ -14,10 +14,6 @@ before_script:
 script:
   - ng build --prod
 
-after_success:
-  - ng build --prod --base-href "https://notsaltydev.github.io/todo-app/" ngh
-  - angular-cli-ghpages
-
 notifications:
   email:
     on_failure: change
