@@ -21,7 +21,7 @@ script:
   - echo "*** BUILDING $NAME ***"
   - npm i --silent --no-optional;
   - ng build --prod --aot --no-vendor-chunk --progress=false;
-  - ngh --repo="$GITHUB_ORG/$NAME.git" --name="$GITHUB_NAME" --email="$GITHUB_EMAIL";
+  - ngh
 
 
 #only building specific branches
