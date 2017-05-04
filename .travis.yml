@@ -5,8 +5,8 @@ node_js:
   - "6.10.2"
 
 branches:
-  only:
-    - master
+  except:
+    - gh-pages
 
 before_script:
   - npm install -g @angular/cli
@@ -15,9 +15,14 @@ script:
   - ng build --prod
   - bash ./.travis-deploy.sh
 
-notifications:
-  email:
-    on_failure: change
-    on_success: change
+after_sucess:
+  - npm run gh-pages-travis
+env:
+  global:
+    - DEPLOY_BRANCH="master"
+    - SOURCE_DIR="dist"
+    - TARGET_BRANCH="gh-pages"
+    - GIT_NAME="travis"
+    - GIT_EMAIL="deploy@travis-ci.org"
 
 
