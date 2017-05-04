@@ -8,23 +8,23 @@ cache:
   directories:
   - node_modules
 
-env:
-  global:
-    - GITHUB_ORG="https://GITHUB_TOKEN@github.com/notsaltydev/todo-app"
-    - GITHUB_NAME="The Buildbot"
-    - GITHUB_EMAIL="buildbot@angular2buch.de"
 install:
   - npm i --silent --no-optional -g @angular/cli@1.0.0
   - npm i --silent --no-optional -g angular-cli-ghpages
 
 script:
-  - echo "*** BUILDING $NAME ***"
   - npm i --silent --no-optional;
-  - ng build --prod --aot --no-vendor-chunk --progress=false;
-  - ngh
+  - ng build --prod
 
 
 #only building specific branches
 branches:
   only:
     - master
+deploy:
+  provider: pages
+  local_dir: dist
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  on:
+    branch: master
