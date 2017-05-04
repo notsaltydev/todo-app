@@ -13,8 +13,8 @@ install:
   - npm i --silent --no-optional -g angular-cli-ghpages
 
 script:
-  - npm i --silent --no-optional;
-  - ng build --prod
+  - ng build --prod --base-href "https://notsaltydev.github.io/todo-app/" ngh
+  - angular-cli-ghpages
 
 
 #only building specific branches
