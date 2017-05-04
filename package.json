@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "gh-pages-travis": "gh-pages-travis"
+    "gh-pages-travis": "ng build --prod --base-href 'https://notsaltydev.github.io/todo-app/ ngh'"
   },
   "private": true,
   "dependencies": {

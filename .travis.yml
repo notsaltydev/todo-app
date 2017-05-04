@@ -4,6 +4,11 @@ language: node_js
 node_js:
   - 6.10.2
 
+
+branches:
+  only:
+    - master
+
 cache:
   directories:
   - node_modules
@@ -14,17 +19,5 @@ install:
 
 script:
   - ng build --prod --base-href "https://notsaltydev.github.io/todo-app/" ngh
-  - angular-cli-ghpages
 
 
-#only building specific branches
-branches:
-  only:
-    - master
-deploy:
-  provider: pages
-  local_dir: dist
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-  on:
-    branch: master
