@@ -22,3 +22,10 @@ notifications:
   email:
     on_failure: change
     on_success: change
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: bxt1LAo3bUYQj9s6dZ6X
+  on:
+    branch: master
