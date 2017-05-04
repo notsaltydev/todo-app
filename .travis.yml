@@ -1,27 +1,30 @@
-#.travis.yml
 
 language: node_js
+
 node_js:
-  - "6.10.2"
+  - 6.10.2
 
-branches:
-  except:
-    - gh-pages
+cache:
+  directories:
+  - node_modules
 
-before_script:
-  - npm install -g @angular/cli
-
-script:
-  - ng build --prod
-
-after_sucess:
-  - npm run gh-pages-travis
 env:
   global:
-    - DEPLOY_BRANCH="master"
-    - SOURCE_DIR="dist"
-    - TARGET_BRANCH="gh-pages"
-    - GIT_NAME="travis"
-    - GIT_EMAIL="deploy@travis-ci.org"
+    - GITHUB_ORG="https://GITHUB_TOKEN@github.com/notsaltydev/todo-app"
+    - GITHUB_NAME="The Buildbot"
+    - GITHUB_EMAIL="buildbot@angular2buch.de"
+install:
+  - npm i --silent --no-optional -g @angular/cli@1.0.0
+  - npm i --silent --no-optional -g angular-cli-ghpages
+
+script:
+  - echo "*** BUILDING $NAME ***"
+  - npm i --silent --no-optional;
+  - ng build --prod --aot --no-vendor-chunk --progress=false;
+  - ngh --repo="$GITHUB_ORG/$NAME.git" --name="$GITHUB_NAME" --email="$GITHUB_EMAIL";
 
 
+#only building specific branches
+branches:
+  only:
+    - master
