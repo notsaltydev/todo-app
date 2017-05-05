@@ -1,9 +1,9 @@
-addons:
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
+#addons:
+#  apt:
+#    sources:
+#      - google-chrome
+#    packages:
+#      - google-chrome-stable
 
 node_js:
   - 6.10.2
@@ -19,10 +19,10 @@ cache:
 install:
   - npm i -g @angular/cli@1.0.0
 
-script:
-  - ng lint
-  - ng test
-  - ng e2e
+#script:
+#  - ng lint
+#  - ng test
+#  - ng e2e
 
 
 #Deploy
