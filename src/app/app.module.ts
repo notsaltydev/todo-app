@@ -4,27 +4,27 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { TodoListHeaderComponent } from './todo-list-header/todo-list-header.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
-import { TodoListItemComponent } from './todo-list-item/todo-list-item.component';
 import { TodoListFooterComponent } from './todo-list-footer/todo-list-footer.component';
-import {TodoDataService} from './todo-data.service';
-import {ApiService} from "./api.service";
+import { TodoListHeaderComponent } from './todo-list-header/todo-list-header.component';
+import { TodoDataService } from './todo-data.service';
+import { TodoListItemComponent } from './todo-list-item/todo-list-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoListHeaderComponent,
     TodoListComponent,
-    TodoListItemComponent,
-    TodoListFooterComponent
+    TodoListFooterComponent,
+    TodoListHeaderComponent,
+    TodoListItemComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [TodoDataService, ApiService],
+  providers: [TodoDataService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

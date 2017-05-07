@@ -1,5 +1,5 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {Todo} from '../todo';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Todo } from '../todo';
 
 @Component({
   selector: 'app-todo-list-item',
@@ -26,4 +26,5 @@ export class TodoListItemComponent {
   removeTodo(todo: Todo) {
     this.remove.emit(todo);
   }
+
 }

@@ -1,12 +1,14 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Todo} from '../todo';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Todo } from '../todo';
 
-@Component({
-  selector: 'app-todo-list',
-  templateUrl: './todo-list.component.html',
-  styleUrls: ['./todo-list.component.css']
-})
-export class TodoListComponent implements OnInit {
+@Component(
+  {
+    selector: 'app-todo-list',
+    templateUrl: './todo-list.component.html',
+    styleUrls: ['./todo-list.component.css']
+  }
+)
+export class TodoListComponent {
 
   @Input()
   todos: Todo[];
@@ -27,9 +29,5 @@ export class TodoListComponent implements OnInit {
   onRemoveTodo(todo: Todo) {
     this.remove.emit(todo);
   }
-
-  ngOnInit() {
-  }
-
 
 }
