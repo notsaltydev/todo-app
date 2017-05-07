@@ -6,15 +6,10 @@ import {Todo} from './todo';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [TodoDataService]
+  providers: []
 })
 export class AppComponent {
 
-  newTodo: Todo = new Todo();
-
-  // Ask Angular DI system to inject the dependency
-  // associated with the dependency injection token `TodoDataService`
-  // and assign it to a property called `todoDataService`
   constructor(private todoDataService: TodoDataService) {
   }
 
@@ -22,15 +17,14 @@ export class AppComponent {
     return this.todoDataService.getAllTodos();
   }
 
-  addTodo() {
-    this.todoDataService.addTodo(this.newTodo);
-    this.newTodo = new Todo();
+  onAddTodo(todo: Todo) {
+    this.todoDataService.addTodo(todo);
   }
 
   /**
    * @param todo
    */
-  removeTodo(todo) {
+  onRemoveTodo(todo) {
     this.todoDataService.deleteTodoById(todo.id);
   }
 
@@ -38,7 +32,8 @@ export class AppComponent {
   /**
    * @param todo
    */
-  toggleTodoComplete(todo) {
+  onToggleTodoComplete(todo) {
     this.todoDataService.toggleTodoComplete(todo);
+    console.log(todo);
   }
 }
