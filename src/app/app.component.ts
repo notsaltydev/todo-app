@@ -24,7 +24,7 @@ export class AppComponent {
   /**
    * @param todo
    */
-  removeTodo(todo) {
+  onRemoveTodo(todo) {
     this.todoDataService.deleteTodoById(todo.id);
   }
 
@@ -32,7 +32,7 @@ export class AppComponent {
   /**
    * @param todo
    */
-  toggleTodoComplete(todo) {
+  onToggleTodoComplete(todo) {
     this.todoDataService.toggleTodoComplete(todo);
   }
 }
