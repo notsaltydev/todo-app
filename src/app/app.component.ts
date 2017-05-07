@@ -6,7 +6,7 @@ import {Todo} from './todo';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [TodoDataService]
+  providers: []
 })
 export class AppComponent {
 
@@ -34,5 +34,6 @@ export class AppComponent {
    */
   onToggleTodoComplete(todo) {
     this.todoDataService.toggleTodoComplete(todo);
+    console.log(todo);
   }
 }
